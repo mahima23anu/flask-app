@@ -1,0 +1,22 @@
+.center{
+  border: 5px outset rgb(174, 180, 163);
+  background-color: rgb(108, 103, 103);
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 5px;
+
+}
+.btn1{
+  margin-right: 40px;
+  padding: 7px;
+  color: rgb(41, 35, 35);
+  background-color: rgb(183, 185, 187);
+  border-radius: 11px;
+  
+  
+}
+@media screen and (min-width: 480px) {
+  body {
+   text-decoration: none;
+  }
+}
