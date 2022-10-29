@@ -7,22 +7,109 @@
   <title>Document</title>
   <link rel="stylesheet" href="{{ url_for('static',filename='styles/stylesheet.css') }}" >
 </head>
-<body background="{{url_for('static', filename='styles/police.jpg')}}">
+<!-- <body background="{{url_for('static', filename='styles/police.jpg')}}"> -->
+<body>
+<div class="my_bg">
   <div class="center">
-    <span> 
-      <button class="btn1" type="button" onclick="alert('Home page')">Home</button>
-    </span>
-    <span>
-      <button class="btn1" type="button" onclick="alert('Contact page')"> Contact</button> 
-    </span>
-    <span> 
-      <button class="btn1" type="button" onclick="alert('FIR Registration page')">FIR Registration</button>
-    </span>
-    <span> 
-      <button class="btn1" type="button" onclick="alert('Help')">Help</button>
-    </span>
+    <b><i>FIR Registration Form</i></b>
   </div>
-  
+  <br>
+  <div>
+    <form>
+      <div class="flex-container" id="container">
+          <div>
+            <label for="district">
+              District:
+            </label>
+            <select id="district" name="district">
+              <option value="Kanpur">Kanpur</option>
+              <option value="Prayagraj">Prayagraj</option>
+              <option value="Agra">Agra</option>
+              <option value="Aligarh">Aligarh</option>
+              <option value="Fatehpur">Fatehpur</option>
+              <option value="Ghaziabad">Ghaziabad</option>
+              <option value="Jhashi">Jhashi</option>
+              <option value="Lucknow">Lucknow</option>
+            </select>&nbsp;&nbsp;&nbsp;
+          </div>
+          <div>
+            <label for="station">
+              Police Station:
+            </label>
+            <input type="text" id="station" name="station">&nbsp;&nbsp;&nbsp;
+          </div>
+      <div>
+          <label for="year">
+            Year:
+          </label>
+          <input type="text" id="year" name="year">&nbsp;&nbsp;&nbsp;
+      </div>
+      <div>
+          <label for="date">
+            Date of Registration:
+          </label>
+          <input type="date" id="date" name="date">
+      </div>
+    </div>
+    <br><hr>
+    <p>
+      <b><h2>Complaint/Informant</h2></b>
+    </p>
+    <hr><br>
+    <div class="flex-container" id="container">
+      <div>
+        <label for="fname">
+          Name:
+        </label>
+        <input type="text" id="fname" name="fname">
+      </div>
+      <div>
+        <label for="fname">
+          Address:
+        </label>
+        <input type="text" id="address" name="address">
+      </div>
+      <div>
+        <label for="place">
+          Place of incident:
+        </label>
+        <input type="text" id="place" name="place">
+      </div>
+      <div>
+        <label for="nationality">
+          Nationality:
+        </label>
+        <input type="text" id="nationality" name="nationality">
+      </div>
+      <div>
+        <label for="witness">
+          Witness Name:
+        </label>
+        <input type="text" id="witness" name="witness">
+      </div>
+      <div>
+        <label for="mobile">
+          Phone No.:
+        </label>
+        <input type="text" id="mobile" name="mobile">
+      </div>
+      </div>
+      <br>
+      <br>
+        <label for="complaint">
+          Complaint:<br>
+        </label>
+        <textarea name="complaint" rows="10" cols="30"></textarea>
+      <div>
+        <br>
+        <input type="submit">
+      </div>
+      <div class="fixed">
+        <img src="{{ url_for('static',filename='styles/final.png') }}" alt="logo" width="250" height="250">
+      </div>
+    </form>
+  </div>
+</div>
 
 </body>
 </html>
