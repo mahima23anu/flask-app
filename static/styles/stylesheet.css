@@ -82,8 +82,8 @@ span{
 
 .my_bg {
   height: 100%;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(rgb(171, 167, 167), rgb(121, 121, 121));
+  /* background-color: red; For browsers that do not support gradients */
+  /* background-image: linear-gradient(rgb(171, 167, 167), rgb(121, 121, 121)); */
  position: absolute;
  top:0px;
   right:0px;
@@ -91,6 +91,9 @@ span{
   left:0px;
 }
 body {
+  background-color: rgb(150, 147, 147);
+  background-image: linear-gradient(rgb(171, 167, 167), rgb(121, 121, 121));
+  background-attachment: fixed;
   margin: 0px;
   height: 100%;
   font-size: larger;
@@ -106,7 +109,7 @@ select{
   background-color:rgb(169, 167, 167);
 }
 div.fixed {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 0;
   width: 390px;
