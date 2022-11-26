@@ -1,0 +1,122 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./simple.jpg);
+    backdrop-filter: blur(4px);
+  
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.mid{
+    
+    width: 800px;
+    height: 500px;
+}
+.div{
+    
+    min-width: 100%;
+    max-height: 100%;
+    height: 450px;
+    background-image: linear-gradient(rgb(254, 33, 33),rgb(124, 124, 255));
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+  
+   
+}
+
+
+/* .div:nth-child(even){
+    z-index: 10;
+    background-image: linear-gradient(rgb(244, 246, 242),rgb(150, 247, 64));
+}
+.div:nth-child(odd){
+    background-image: linear-gradient(rgb(254, 33, 33),rgb(124, 124, 255));
+} */
+.main-div{
+    border: 4px solid black;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+}
+.controls{
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+.controls button{
+    height: 30px;
+    padding: 5px 181px;
+}
+
+/* .col-1{
+    display: none;
+}
+
+.col-2{
+    display: none;
+}
+.col-3{
+    display: none;
+}
+.col-4{
+    display: none;
+} */
+
+h1{ 
+    padding: 180px 50px;
+    font-size: 50px;
+    
+}
+
+input[type=text]{
+    width: 80%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(245, 163, 163);
+    opacity: 0.2;
+    
+  }
+  input[type=text]:hover{
+    opacity: 1;
+    
+  }
+  textarea{
+    width: 80%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(245, 163, 163);
+    opacity: 0.2;
+  }
+  textarea:hover{
+    opacity: 1;
+  }
+  .col-4 div{
+    text-align: left;
+    padding: 4px;
+  }
